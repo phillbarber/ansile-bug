@@ -1,0 +1,10 @@
+out/
+logs
+*.db
+.vagrant/
+.gradle/
+*.iml
+.idea/
+*.db
+build/
+inventories/local
