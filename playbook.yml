@@ -1,11 +1,9 @@
 - name: Run some tasks
   hosts: localhost
   tasks:
-    - name: Print the_variable from playbook.yml
-      shell: echo "The variable is {{ the_variable }}"
+    - debug: var=the_variable
 
-    - name: Print variable as set from include
-      include: someTasks.yml
+    - include: someTasks.yml
       vars:
         the_variable_as_param: "{{ the_variable }}"
 

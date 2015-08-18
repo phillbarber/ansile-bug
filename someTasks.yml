@@ -1,2 +1,1 @@
-- name: Print variable as set from include
-  shell: echo "The variable is {{ the_variable_as_param }}"
+- debug: var=the_variable_as_param
